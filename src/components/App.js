@@ -11,6 +11,7 @@ const App = () => {
   }
   return (
     <div>
+      <h1>Sum Calculator</h1>
         <input type="number" onChange={sum}/>
         <p>Sum: {count}</p>
     </div>
