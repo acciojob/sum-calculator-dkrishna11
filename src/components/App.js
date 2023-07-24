@@ -7,7 +7,7 @@ const App = () => {
 
   function sum(e){
     let value=e.target.value;
-    setCount(count=count+value)
+    setCount(+count+ +value)
 
   }
   return (
