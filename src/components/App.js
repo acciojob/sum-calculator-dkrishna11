@@ -1,11 +1,20 @@
 
-import React from "react";
+import React, {useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
+  let [count,setCount]=useState(0);
+
+  function sum(e){
+    let value=e.target.value;
+    count+=value
+    setCount(count)
+
+  }
   return (
     <div>
-        {/* Do not remove the main div */}
+        <input type="number" onChange={sum}/>
+        <p>Sum: {count}</p>
     </div>
   )
 }
