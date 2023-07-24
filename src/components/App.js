@@ -6,8 +6,7 @@ const App = () => {
   let [count,setCount]=useState(0);
 
   function sum(e){
-    let value=e.target.value;
-    setCount(+count+ +value)
+    setCount(parseInt(count) + parseInt(e.target.value))
 
   }
   return (
